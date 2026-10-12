@@ -1,7 +1,7 @@
 
 package tn.esprit.gestionzoo.entities;
 
-public class Aquatiques extends Animal {
+public abstract class Aquatiques extends Animal {
 
     protected String habitat;
 
@@ -15,8 +15,6 @@ public class Aquatiques extends Animal {
         return super.toString() +
                 ", habitat='" + habitat + '\'';
     }
-    public void swim() {
-        System.out.println("This aquatic animal is swimming");
-    }
+    public abstract void swim();
 
 }
